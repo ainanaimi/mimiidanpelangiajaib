@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimi Dan Pelangi Ajaib</title>
+    <link href="Bahasa.html" rel="stylesheet">
+    <script src="Watak%20Utama.html" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9ECFED;
+        }
+        header {
+            background-color: #8AD4DD;
+            text-align: center;
+            padding: 40px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #FFFFFF;
+        }
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #FFFFFF;
+        }
+        .navbar {
+            background-color: #096A87;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /* Full screen height */
+            position: relative;
+            background: url("MIMI.png") no-repeat center center;
+            background-size: cover;
+        }
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .content h2, .content p, .button-container {
+            position: relative;
+            z-index: 2; /* Above the overlay */
+        }
+        .content h2 {
+            font-size: 35px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+			text-align: center;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #FFFFFF;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #8AD4DD;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .button-container a:hover {
+            background-color: #EBCDCE;
+            color: #044C13;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mimi Dan Pelangi Ajaib</h1>
+        <p>✨Selamat datang ke buku cerita kami!✨</p>
+    </header>
+    <div class="navbar">
+        <a href="#home">Laman Utama</a>
+        <a href="#biodata">Sinopsis</a>
+        <a href="#portfolio">Watak Utama</a>
+    </div>
+    <div class="content">
+        <h2>Selamat Datang Ke Halaman<br>Mimi Dan Pelangi Ajaib!</h2>
+        <p>Hello! Sila pilih bahasa yang anda gemari</p>
+        <div class="button-container">
+        <a href="/coding/bmstorybook/bmstorybook.html">Bahasa Melayu</a>
+            <a href="/coding/bjstorybook/bjstorybook.html">Bahasa Bajau Ubian</a>
+        </div>
+    </div>
+</body>
+</html>
