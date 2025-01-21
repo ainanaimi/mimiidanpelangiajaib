@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Poppins', cursive, sans-serif;
   margin: 0;
   padding: 0;
   background: url("MIMI.png") no-repeat center center fixed;
@@ -76,44 +76,3 @@ body {
   transform: scale(0.98);
 }
 
-/* Scanner content container */
-.scanner-content {
-  width: 100%;
-  height: 80vh; /* Height set to 80% of the viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3f3f3; /* Optional, to set a background */
-  border: 1px solid #ddd; /* Optional border around the scanner */
-  position: relative; /* Ensures scanner can take the full size */
-}
-
-/* Scanner itself */
-.scanner {
-  width: 100%; /* Take up 100% of the container's width */
-  height: 100%; /* Take up 100% of the container's height */
-  background-color: #000; /* Optional, you can change this to any color */
-  border-radius: 10px; /* Optional, makes edges rounded */
-}
-
-/* Make sure the scanner content adjusts for mobile devices */
-@media (max-width: 768px) {
-  .scanner-content {
-    height: 60vh; /* For smaller screens, reduce height */
-  }
-  .scanner {
-    width: 100%; /* Full width on smaller screens */
-    height: 100%; /* Full height on smaller screens */
-  }
-}
-
-/* Extra large screen */
-@media (min-width: 1200px) {
-  .scanner-content {
-    height: 90vh; /* For larger screens, increase the height */
-  }
-  .scanner {
-    width: 90%; /* Adjust the width to not go out of the screen */
-    height: 90%; /* Adjust the height to fit the screen */
-  }
-}
